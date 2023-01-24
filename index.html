@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Meu Portifolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 class="logo">FS</h1>
+
+        <nav>
+          <ul class="js-nav">
+            <li>
+              <a href="#section-01">Home</a>
+            </li>
+            <li>
+              <a href="#section-02">Sobre mim</a>
+            </li>
+            <li>
+              <a href="#section-03">Skills</a>
+            </li>
+            <li>
+              <a href="#section-04">Projetos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button id="js-menu-mobile" class="button-mobile">
+          <img src="./image/menu hamburguer.png" alt="Menu Mobile" />
+        </button>
+      </div>
+
+      <div class="menu-mobile">
+        <div class="overlay"></div>
+        <aside>
+          <ul class="js-nav">
+            <li>
+              <a href="#section-01">Home</a>
+            </li>
+            <li>
+              <a href="#section-02">Sobre mim</a>
+            </li>
+            <li>
+              <a href="#section-03">Skills</a>
+            </li>
+            <li>
+              <a href="#section-04">Projetos</a>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </header>
+
+    <section class="s-hero" id="section-01">
+      <div class="container">
+        <div class="info">
+          <p>
+            OLÁ, EU SOU <br />
+            <span>Felipe Silva</span>
+          </p>
+          <h1>Desenvolvedor FRONT-END</h1>
+
+          <div class="image">
+            <img src="./image/illustration.svg" alt="" />
+          </div>
+
+          <div class="buttons">
+            <a href="#" class="linkedin">
+              <img src="./image/linkedin.svg" alt="Linkedin" />
+              Linkedin
+            </a>
+
+            <a href="#" class="github">
+              <img src="./image/github.svg" alt="Github" />
+              Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-about" id="section-02">
+      <div class="container">
+        <div class="image">
+          <img src="./image/image.jpg" alt="" />
+        </div>
+
+        <div class="info-about">
+          <h2>SOBRE MIM</h2>
+          <span>Mogi Das Cruzes, SP</span>
+          <p>
+            Sou desenvolvedor Front-end com experiência em React, Next.js,
+            Typescript e Styled Components. Sempre me mantenho atualizado,
+            estudando todos os dias. Adoro solucionar problemas, criar coisas
+            novas e codar, isso foi o grande ponto pelo qual optei por seguir
+            essa área.
+          </p>
+
+          <div class="buttons">
+            <a href="#" class="cv">
+              <img src="./image/download-cloud.svg" alt="Donwload" />
+              Curriculo
+            </a>
+
+            <a href="#" class="email">
+              <img src="./image/email.svg" alt="Email" />
+              E-mail
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-skills" id="section-03">
+      <div class="container">
+        <h2>Minhas Stacks</h2>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./image/akar-icons_javascript-fill.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/akar-icons_react-fill.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/logos_nextjs.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/icomoon-free_html-five.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/fontisto_css3.svg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/file-icons_tailwind.svg" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="s-projects" id="section-04">
+      <div class="container">
+        <h3>Projetos</h3>
+
+        <div class="projects-container">
+          <div class="project">
+            <div class="image">
+              <img
+                src="./image/capa-lp-neon.png"
+                alt="Capa Landing Page Neon"
+              />
+            </div>
+            <div class="info-project">
+              <h2>Redesign do Banco NEON</h2>
+              <p>
+                Redesing da Landing Page do Banco NEON, totalmente editável por
+                Wordpress
+              </p>
+              <span>HTML - CSS - Javascript - Wordpress</span>
+              <a
+                href="https://lp-redesing-neon-dev.netlify.app/"
+                class="show"
+                target="_blank"
+              >
+                <img src="./image/link.svg" alt="Link" />
+                Visualizar
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="image">
+              <img src="./image/dt-money.png" alt="DT-money" />
+            </div>
+            <div class="info-project">
+              <h2>DT Money</h2>
+              <p>Aplicativo de controle financeiro tanto web quanto mobile</p>
+              <span
+                >ReactJS - Typescript - Styled-Components - MigrateJS -
+                Axios</span
+              >
+              <a
+                href="https://dtmoney-ebon-gamma.vercel.app/"
+                class="show"
+                target="_blank"
+              >
+                <img src="./image/link.svg" alt="Link" />
+                Visualizar
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="image">
+              <img src="./image/capa-coffe-delivery.png" alt="" />
+            </div>
+            <div class="info-project">
+              <h2>Coffe Delivery</h2>
+              <p>
+                Um delevery de café, onde é possivel colocar no carrinho de
+                compras os cafés e confirmar a compra
+              </p>
+              <span
+                >React - Styled Components - Typescript - LocalStorage -
+                react-hook-form</span
+              >
+              <a
+                href="https://coffee-delivery-573h.vercel.app/"
+                class="show"
+                target="_blank"
+              >
+                <img src="./image/link.svg" alt="Link" />
+                Visualizar
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="image">
+              <img src="./image/hostinger.png" alt="" />
+            </div>
+            <div class="info-project">
+              <h2>Hostinger</h2>
+              <p>Landing Page da página da Hostinger</p>
+              <span>HTML - CSS </span>
+              <a
+                href="https://hostinger-dev.netlify.app/"
+                class="show"
+                target="_blank"
+              >
+                <img src="./image/link.svg" alt="Link" />
+                Visualizar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 5,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          200: {
+            slidesPerView: 2,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      })
+    </script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

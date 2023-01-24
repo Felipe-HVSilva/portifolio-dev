@@ -1,0 +1,361 @@
+.s-hero {
+  height: 62.5rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .info {
+    padding-top: 15.2rem;
+
+    p {
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      text-transform: uppercase;
+      color: white;
+      span {
+        color: $blue;
+        font-weight: 600;
+        font-size: 6.4rem;
+        line-height: 7.7rem;
+        text-transform: uppercase;
+
+        margin-top: 1.2rem;
+      }
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      text-transform: uppercase;
+
+      color: #ffffff;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+
+      margin-top: 6rem;
+
+      a {
+        line-height: 45px;
+        padding: 0px 32px;
+
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #fff;
+        border-radius: 4px;
+
+        &:hover {
+          img {
+            animation: iconMove 6s ease-in-out infinite;
+          }
+        }
+
+        &.linkedin {
+          border: 2px solid transparent;
+          border-image: linear-gradient(#10d7e2, #9358f7);
+          border-image-slice: 2;
+
+          padding: 0px 22px;
+        }
+
+        &.github {
+          border: 2px solid transparent;
+          border-image: linear-gradient(#d24074, #6518b4);
+          border-image-slice: 2;
+        }
+      }
+    }
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    right: -350px;
+    animation: float 7s ease-in-out infinite;
+  }
+
+  @media (max-width: 1150px) {
+    .image {
+      right: -267px;
+    }
+  }
+
+  @media (max-width: 990px) {
+    .container {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info {
+      padding-top: 6.2rem;
+    }
+    .image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 561px) {
+    height: 31.2rem;
+    .info {
+      padding-top: 5.6rem;
+      p {
+        font-size: 16px;
+        line-height: 19px;
+        span {
+          font-weight: 600;
+          font-size: 3.2rem;
+          line-height: 3.9rem;
+        }
+      }
+
+      h1 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .buttons {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+}
+
+.s-about {
+  background-color: $dark-200;
+  padding: 100px 0px;
+
+  .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 183px;
+  }
+
+  .image {
+    border-left: 4px solid $blue;
+
+    height: 36.7rem;
+    width: 36.7rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .info-about {
+    h2 {
+      font-weight: 600;
+      font-size: 2.4rem;
+      line-height: 2.9rem;
+      text-transform: uppercase;
+      color: white;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      color: #fff;
+      display: block;
+      margin-top: 4rem;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+
+      width: 100%;
+      max-width: 53rem;
+      color: white;
+      margin-top: 2.1rem;
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 4.2rem;
+      gap: 4.8rem;
+
+      a {
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 4.5rem;
+        text-decoration: none;
+        gap: 1.6rem;
+        color: white;
+
+        display: flex;
+        align-items: center;
+
+        padding: 0 32px;
+
+        &:hover {
+          img {
+            animation: iconMove 6s ease-in-out infinite;
+          }
+        }
+
+        &.cv {
+          border: 2px solid transparent;
+          // border-image: linear-gradient(#10d7e2, #9358f7);
+          border-image: linear-gradient(#d24074, #6518b4);
+          border-image-slice: 2;
+
+          padding: 0px 22px;
+        }
+
+        &.email {
+          border: 2px solid transparent;
+          border-image: linear-gradient(#10d7e2, #9358f7);
+
+          border-image-slice: 2;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      justify-content: center;
+    }
+    .image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 570px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .info-about {
+      span {
+        margin-top: 1.2rem;
+      }
+      p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 31.2rem;
+        margin: 0px;
+      }
+      .buttons {
+        margin-top: 3.2rem;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    .buttons {
+      a {
+        &.email {
+          padding: 0 22px;
+        }
+      }
+    }
+  }
+}
+
+.s-skills {
+  display: flex;
+  padding: 100px 0px;
+
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+  }
+
+  .swiper {
+    margin-top: 100px;
+    .swiper-wrapper {
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.s-projects {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: $dark-200;
+
+  h3 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .projects-container {
+    margin-top: 6rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 80px;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h3 {
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .projects-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@keyframes iconMove {
+  0% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
